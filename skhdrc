@@ -1,0 +1,38 @@
+# skhdrc syntax reference. Check this out if you want to use key commands other than simple FN keys. 
+# https://github.com/koekeishiya/skhd/blob/master/examples/skhdrc
+
+# Configuration syntax for remapping function keys
+
+# push F1 and Terminal.app opens or changes to foreground
+f1 : open /Applications/Utilities/Terminal.app
+
+# Placeholders that echo the key pressed if uncommented
+# f2 : echo "F2"
+# f3 : echo "F3"
+# f4 : echo "F4"
+
+# Calls the rc binary with the on/off arguments
+f5 : rc on
+f6 : rc off
+
+# Controls spotify with the media playback keys directly! 
+f7 : osascript -e 'tell application "Spotify" to previous track'
+f8 : osascript -e 'tell application "Spotify" to playpause'
+f9 : osascript -e 'tell application "Spotify" to next track'
+
+# Using the cliclick binary make the volume control keys work as expected.
+# cliclick reference https://github.com/BlueM/cliclick/blob/master/README.markdown
+f10 : cliclick kp:mute
+f11 : cliclick kp:volume-down
+f12 : cliclick kp:volume-up
+
+# Using this key for "Show Desktop" assigned in keyboard preferences. Commented out so the system can use it. 
+# f13 : echo "F14"
+
+# Keys simply echo the key name to the log file. Customize these if you have a full size keyboard!
+f14 : echo "F14"
+f15 : echo "F15"
+f16 : echo "F16"
+f17 : echo "F17"
+f18 : echo "F18"
+f19 : echo "F19"

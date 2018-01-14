@@ -2,12 +2,12 @@
 This repo is a reference implementation of using opensource tools to re-map function keys on macOS keyboard. Also provides ability to run shell scripts from function key press. I really just wanted 100% control of all the function keys. Using the built in Keyboard System Preferences and automator services is not reliable or fast enough. 
 
 The first tool is a "Simple hotkey daemon for macOS" which intercepts keyboard input. Each key or key combo triggers a shell application or script. 
-skhd
-https://github.com/koekeishiya/skhd
+
+*skhd* https://github.com/koekeishiya/skhd
 
 The second tool cliclick is a powerful tool for trigging all kinds of keyboard and mouse activity. 
-cliclick
-https://github.com/BlueM/cliclick
+
+*cliclick* https://github.com/BlueM/cliclick
 
 To get this setup working first remove any other keyboard utilities to remove conflicts. Open the system preferences keyboard panel and on the Keyboard tab select "Use F1, F2, etc. keys as standard function keys". These two steps insure that when you push a F1 key that the system receives F1.
 

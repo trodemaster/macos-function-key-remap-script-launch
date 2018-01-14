@@ -29,9 +29,7 @@ SCREENSHOT
 
 # Install cliclick
 Both brew and MacPorts have cliclick so install that via one of the two options
-```
-   sudo port install cliclick
-```
+```sudo port install cliclick```
 OR
 ```brew install cliclick```
 

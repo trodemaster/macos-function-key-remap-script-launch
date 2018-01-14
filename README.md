@@ -14,8 +14,12 @@ To get this setup working first remove any other keyboard utilities to remove co
 ![Keyboard preferences enabling standard function keys](screenshot/function-key-toggle.png?raw=true "Keyboard Preferences")
 
 # Install skhd
-If you use brew then {brew install skhd}. Alternately cloning from github and building with Xcode was problem free. Just rember to install the launchd .plist 
-    sudo cp skhd/examples/com.koekeishiya.skhd.plist ~/Library/LaunchAgents/
+If you use brew then ```brew install skhd```. Alternately cloning from github and building with Xcode was problem free. Just rember to install the launchd .plist 
+
+```
+sudo cp skhd/examples/com.koekeishiya.skhd.plist ~/Library/LaunchAgents/
+```
+
 I also updated the path key to include my $GOPATH/bin with the variable expanded as the launchd context will not have standard environment variables.
 
 Copy the example config file from this repo to your home dir.

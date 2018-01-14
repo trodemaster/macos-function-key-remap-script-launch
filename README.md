@@ -33,7 +33,7 @@ Both brew and MacPorts have cliclick so install that via one of the two options
    sudo port install cliclick
 ```
 OR
-   brew install cliclick
+```brew install cliclick```
 
 # Configuring and testing the setup
 The launchd .plist is configured by default to log skhd to the following two files. I found it useful to tail -f the .out file when configuring the settings.

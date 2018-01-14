@@ -1,5 +1,5 @@
 # macos-function-key-remap-script-launch
-Reference implementation of using opensource tools to re-map function keys on macOS keyboard. Also provides ability to run shell scripts from function key press. I really just wanted 100% control of all the function keys. Using the built in Keyboard System Preferences and automator services is not reliable or fast enough. 
+This repo is a reference implementation of using opensource tools to re-map function keys on macOS keyboard. Also provides ability to run shell scripts from function key press. I really just wanted 100% control of all the function keys. Using the built in Keyboard System Preferences and automator services is not reliable or fast enough. 
 
 The first tool is a "Simple hotkey daemon for macOS" which intercepts keyboard input. Each key or key combo triggers a shell application or script. 
 skhd
@@ -10,6 +10,8 @@ cliclick
 https://github.com/BlueM/cliclick
 
 To get this setup working first remove any other keyboard utilities to remove conflicts. Open the system preferences keyboard panel and on the Keyboard tab select "Use F1, F2, etc. keys as standard function keys". These two steps insure that when you push a F1 key that the system receives F1.
+
+![Keyboard preferences enabling standard function keys](screenshots/function-key-toggle.png?raw=true "Keyboard Preferences")
 
 # Install skhd
 If you use brew then {brew install skhd}. Alternately cloning from github and building with Xcode was problem free. Just rember to install the launchd .plist 

@@ -43,5 +43,6 @@ The launchd .plist is configured by default to log skhd to the following two fil
     /tmp/skhd.err
     /tmp/skhd.out
 
-Edit the ~/.skhdrc example file and adjust to your desired actions. The example from this repo is setup for customizing function keys but the tool can handle any combination of key chords. The authors repo has lots of examples for complex input for managing terminal windows. 
+# Edit the ~/.skhdrc example file
+The example in this repo is setup for customizing function keys but the tool can handle any combination of key chords. The skhd author's repo has lots of examples for complex input for managing terminal windows. 
 

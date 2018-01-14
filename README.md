@@ -14,9 +14,11 @@ To get this setup working first remove any other keyboard utilities to remove co
 ![Keyboard preferences enabling standard function keys](screenshot/function-key-toggle.png?raw=true "Keyboard Preferences")
 
 # Install skhd
-If you use brew then ```brew install skhd```. Alternately cloning from github and building with Xcode was problem free. Just rember to install the launchd .plist 
+If you use brew then ```brew install skhd```. Alternately cloning from github and building with Xcode was problem free. Just rember to install the launchd .plist & put the binary someplace useful in the $PATH.
 
 ```
+sudo cp skhd/bin/skhd /usr/local/bin/
+sudo chown root:wheel /usr/local/bin/skhd
 sudo cp skhd/examples/com.koekeishiya.skhd.plist ~/Library/LaunchAgents/
 ```
 

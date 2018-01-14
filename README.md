@@ -37,7 +37,7 @@ Approve the skhd binary for Accessibility access in system preferences after bei
 
 
 # Install cliclick
-Both brew and MacPorts have cliclick so install that via one of the two options
+Both brew and MacPorts have cliclick so install that via one of the two options. The cliclick is providing the abiilty to use the media keys and other hard to simulate keys. Seems really powerful and likely can do all kinds of crazy stuff with it. 
 
 ```sudo port install cliclick```
 

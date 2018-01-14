@@ -11,7 +11,7 @@ https://github.com/BlueM/cliclick
 
 To get this setup working first remove any other keyboard utilities to remove conflicts. Open the system preferences keyboard panel and on the Keyboard tab select "Use F1, F2, etc. keys as standard function keys". These two steps insure that when you push a F1 key that the system receives F1.
 
-*Install skhd*
+# Install skhd
 If you use brew then {brew install skhd}. Alternately cloning from github and building with Xcode was problem free. Just rember to install the launchd .plist 
 sudo cp skhd/examples/com.koekeishiya.skhd.plist ~/Library/LaunchAgents/
 I also updated the path key to include my $GOPATH/bin with the variable expanded as the launchd context will not have standard environment variables.
@@ -25,12 +25,12 @@ launchctl load -w ~/Library/LaunchAgents/com.koekeishiya.skhd.plist
 Approve the skhd binary for Accessibility access in system preferences after being prompted.
 SCREENSHOT
 
-*Install cliclick*
+# Install cliclick
 Both brew and MacPorts have cliclick so install that via one of the two options
 sudo port install cliclick
 brew install cliclick
 
-*Configuring and testing the setup*
+# Configuring and testing the setup
 The launchd .plist is configured by default to log skhd to the following two files. I found it useful to tail -f the .out file when configuring the settings.
 /tmp/skhd.err
 /tmp/skhd.out

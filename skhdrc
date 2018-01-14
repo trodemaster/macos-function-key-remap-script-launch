@@ -1,7 +1,7 @@
 # skhdrc syntax reference. Check this out if you want to use key commands other than simple FN keys. 
 # https://github.com/koekeishiya/skhd/blob/master/examples/skhdrc
 
-# Configuration syntax for remapping function keys
+# Configuration for remapping function keys to do useful stuff
 
 # push F1 and Terminal.app opens or changes to foreground
 f1 : open /Applications/Utilities/Terminal.app

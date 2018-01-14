@@ -27,7 +27,8 @@ Start the skhd agent
 ```launchctl load -w ~/Library/LaunchAgents/com.koekeishiya.skhd.plist```
 
 Approve the skhd binary for Accessibility access in system preferences after being prompted.
-SCREENSHOT
+![Keyboard preferences enabling standard function keys](screenshot/skhd-accessibility.png?raw=true "Keyboard Preferences")
+
 
 # Install cliclick
 Both brew and MacPorts have cliclick so install that via one of the two options

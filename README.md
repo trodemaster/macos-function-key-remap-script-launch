@@ -22,7 +22,7 @@ sudo chown root:wheel /usr/local/bin/skhd
 sudo cp skhd/examples/com.koekeishiya.skhd.plist ~/Library/LaunchAgents/
 ```
 
-I also updated the path key to include my $GOPATH/bin with the variable expanded as the launchd context will not have standard environment variables.
+I also updated the path key in the com.koekeishiya.skhd.plist to include my $GOPATH/bin with the variable expanded as the launchd context will not have standard environment variables.
 
 Copy the example config file from this repo to your home dir.
 

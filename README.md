@@ -11,7 +11,7 @@ https://github.com/BlueM/cliclick
 
 To get this setup working first remove any other keyboard utilities to remove conflicts. Open the system preferences keyboard panel and on the Keyboard tab select "Use F1, F2, etc. keys as standard function keys". These two steps insure that when you push a F1 key that the system receives F1.
 
-![Keyboard preferences enabling standard function keys](screenshots/function-key-toggle.png?raw=true "Keyboard Preferences")
+![Keyboard preferences enabling standard function keys](screenshot/function-key-toggle.png?raw=true "Keyboard Preferences")
 
 # Install skhd
 If you use brew then {brew install skhd}. Alternately cloning from github and building with Xcode was problem free. Just rember to install the launchd .plist 

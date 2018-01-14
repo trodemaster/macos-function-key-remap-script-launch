@@ -40,8 +40,8 @@ OR
 
 # Configuring and testing the setup
 The launchd .plist is configured by default to log skhd to the following two files. I found it useful to tail -f the .out file when configuring the settings.
-    /tmp/skhd.err
-    /tmp/skhd.out
+```/tmp/skhd.err
+/tmp/skhd.out```
 
 # Edit the ~/.skhdrc example file
 The example in this repo is setup for customizing function keys but the tool can handle any combination of key chords. The skhd author's repo has lots of examples for complex input for managing terminal windows. 

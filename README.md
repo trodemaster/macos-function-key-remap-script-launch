@@ -19,10 +19,12 @@ If you use brew then {brew install skhd}. Alternately cloning from github and bu
 I also updated the path key to include my $GOPATH/bin with the variable expanded as the launchd context will not have standard environment variables.
 
 Copy the example config file from this repo to your home dir.
-    cp macos-function-key-remap-script-launch/skhdrc ~/.skhdrc
+
+```cp macos-function-key-remap-script-launch/skhdrc ~/.skhdrc```
 
 Start the skhd agent
-    launchctl load -w ~/Library/LaunchAgents/com.koekeishiya.skhd.plist
+
+```launchctl load -w ~/Library/LaunchAgents/com.koekeishiya.skhd.plist```
 
 Approve the skhd binary for Accessibility access in system preferences after being prompted.
 SCREENSHOT
@@ -31,6 +33,7 @@ SCREENSHOT
 Both brew and MacPorts have cliclick so install that via one of the two options
 
 ```sudo port install cliclick```
+
 OR
 
 ```brew install cliclick```

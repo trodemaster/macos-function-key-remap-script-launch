@@ -14,27 +14,10 @@ To get this setup working first remove any other keyboard utilities to remove co
 ![Keyboard preferences enabling standard function keys](screenshot/function-key-toggle.png?raw=true "Keyboard Preferences")
 
 # Install skhd
-If you use brew then ```brew install skhd```. Alternately cloning from github and building with Xcode was problem free. Just rember to install the launchd .plist & put the binary someplace useful in the $PATH. Make sure the .skhdrc file starts with a dot and lives in your user's home directory. 
-
-```
-sudo cp skhd/bin/skhd /usr/local/bin/
-sudo chown root:wheel /usr/local/bin/skhd
-sudo cp skhd/examples/com.koekeishiya.skhd.plist ~/Library/LaunchAgents/
-```
-
-I also updated the path key in the com.koekeishiya.skhd.plist to include my $GOPATH/bin with the variable expanded as the launchd context will not have standard environment variables.
-
-Copy the example config file from this repo to your home dir.
-
-```cp macos-function-key-remap-script-launch/skhdrc ~/.skhdrc```
-
-Start the skhd agent
-
-```launchctl load -w ~/Library/LaunchAgents/com.koekeishiya.skhd.plist```
+Both macports and brew have the binary available. For reference or if you have macports installed take a look at install.sh 
 
 Approve the skhd binary for Accessibility access in system preferences after being prompted.
 ![Keyboard preferences enabling standard function keys](screenshot/skhd-accessibility.png?raw=true "Keyboard Preferences")
-
 
 # Install cliclick
 Both brew and MacPorts have cliclick so install that via one of the two options. The cliclick is providing the abiilty to use the media keys and other hard to simulate keys. Seems really powerful and likely can do all kinds of crazy stuff with it. 

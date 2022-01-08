@@ -6,7 +6,7 @@
     <string>com.koekeishiya.skhd</string>
     <key>ProgramArguments</key>
     <array>
-        <string>/usr/local/bin/skhd</string>
+        <string>/opt/local/bin/skhd</string>
     </array>
     <key>EnvironmentVariables</key>
     <dict>

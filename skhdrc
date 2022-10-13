@@ -1,26 +1,88 @@
-# skhdrc syntax reference. Check this out if you want to use key commands other than simple FN keys. 
+# skhdrc syntax refrence
 # https://github.com/koekeishiya/skhd/blob/master/examples/skhdrc
+# keyboard codes reference
+# The following modifiers are supported:
+# 
+# cmd
+# lcmd
+# rcmd
+# 
+# shift
+# lshift
+# rshift
+# 
+# alt
+# lalt
+# ralt
+# 
+# ctrl
+# lctrl
+# rctrl
+#
+# "return"     (kVK_Return)
+# "tab"        (kVK_Tab)
+# "space"      (kVK_Space)
+# "backspace"  (kVK_Delete)
+# "delete"     (kVK_ForwardDelete)
+# "escape"     (kVK_Escape)
+# "capslock"   (0x39)
+# "home"       (kVK_Home)
+# "end"        (kVK_End)
+# "pageup"     (kVK_PageUp)
+# "pagedown"   (kVK_PageDown)
+# "help"       (kVK_Help)
+# "left"       (kVK_LeftArrow)
+# "right"      (kVK_RightArrow)
+# "up"         (kVK_UpArrow)
+# "down"       (kVK_DownArrow)
+# "button#"    (mouse-button #, e.g: button3)
+# "f1"         (kVK_F1)
+# "f2"         (kVK_F2)
+# "f3"         (kVK_F3)
+# "f4"         (kVK_F4)
+# "f5"         (kVK_F5)
+# "f6"         (kVK_F6)
+# "f7"         (kVK_F7)
+# "f8"         (kVK_F8)
+# "f9"         (kVK_F9)
+# "f10"        (kVK_F10)
+# "f11"        (kVK_F11)
+# "f12"        (kVK_F12)
+# "f13"        (kVK_F13)
+# "f14"        (kVK_F14)
+# "f15"        (kVK_F15)
+# "f16"        (kVK_F16)
+# "f17"        (kVK_F17)
+# "f18"        (kVK_F18)
+# "f19"        (kVK_F19)
+# "f20"        (kVK_F20)
+# 
 
-# Configuration for remapping function keys to do useful stuff
+# stop skhd from intercepting key presses from cliclick
+.blacklist [
+   "cliclick"
+   "VMware Fusion"
+]
 
-# push F1 and Terminal.app opens or changes to foreground
+# Config syntax for remapping function keys
 f1 : open -a "Terminal.app"
-# Placeholders that echo the key pressed if uncommented
-# f2 : echo "F2"
-# f3 : echo "F3"
-# f4 : echo "F4"
+#cmd - f1 : cliclick kp:f1
+f2 : open -a "Visual Studio Code.app"
+#cmd - f2 : cliclick kp:f2
+f3 : open -a "Google Chrome.app"
+f4 : open -a "Signal.app"
+f5 : open -a "Slack.app"
 f6 : open -a "1Password.app"
-# Using the cliclick binary make the volume control keys work as expected.
-# cliclick reference https://github.com/BlueM/cliclick/blob/master/README.markdown
+f7 : cliclick kp:play-previous
+f8 : cliclick kp:play-pause
+f9 : cliclick kp :play-previous
 f10 : cliclick kp:mute
 f11 : cliclick kp:volume-down
 f12 : cliclick kp:volume-up
-# Using this key for "Show Desktop" assigned in keyboard preferences. Commented out so the system can use it. 
-# f13 : echo "F14"
-# Keys simply echo the key name to the log file. Customize these if you have a full size keyboard!
+#f13 : using this key for "Show Desktop" assigned in keyboard preferences
 f14 : echo "F14"
-f15 : echo "F15"
-f16 : echo "F16"
+f15 : /opt/local/bin/bash -c /Users/blake/blakeconfig/kexp
+f16 : echo "F12"
 f17 : echo "F17"
-f18 : echo "F18"
-f19 : echo "F19"
+f18 : osascript ~/blakeconfig/saferm.scpt 
+f19 : sleep 120 && pmset displaysleepnow

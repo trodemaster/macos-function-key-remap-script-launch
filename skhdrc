@@ -62,6 +62,7 @@
 .blacklist [
    "cliclick"
    "VMware Fusion"
+   "Adobe Substance 3D Painter"
 ]
 
 # Config syntax for remapping function keys
@@ -69,16 +70,17 @@ f1 : open -a "Terminal.app"
 #cmd - f1 : cliclick kp:f1
 f2 : open -a "Visual Studio Code.app"
 #cmd - f2 : cliclick kp:f2
-f3 : open -a "Google Chrome.app"
-f4 : open -a "Signal.app"
+f3 : open -a "Safari.app"
+alt - f3 : open -a "Safari Technology Preview.app"
+f4 : open -a "Notes.app"
 f5 : open -a "Slack.app"
 f6 : open -a "1Password.app"
 f7 : cliclick kp:play-previous
 f8 : cliclick kp:play-pause
 f9 : cliclick kp :play-previous
-f10 : cliclick kp:mute
-f11 : cliclick kp:volume-down
-f12 : cliclick kp:volume-up
+f10 : osascript ~/blakeconfig/mute.scpt
+f11 : osascript ~/blakeconfig/decrease_volume.scpt
+f12 : osascript ~/blakeconfig/increase_volume.scpt
 #f13 : using this key for "Show Desktop" assigned in keyboard preferences
 f14 : echo "F14"
 f15 : /opt/local/bin/bash -c /Users/blake/blakeconfig/kexp
